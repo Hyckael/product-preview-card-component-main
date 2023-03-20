@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Outfit:wght@400;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Fraunces', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+/* La section principale */
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(30, 38%, 92%);
+    flex-direction: column;
+}
+/* Le conteneur qui contient la carte et le texte */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* La carte du produit Perfume */
+.card{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 65%;
+    width: 20%;
+    background: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Le texte de la carte */
+.text{
+    padding-left: 30px;
+    background: hsl(0, 0%, 100%);
+    height: 65%;
+    width: 20%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Le titre Perfume */
+.titre {
+    padding-bottom: 10px;
+    letter-spacing: 6px;
+  }
+  /* Le sous-titre */
+.text h2 {
+    font-size: 44px;
+    padding-bottom: 20px;
+    line-height: 1em;
+  }
+  /* Le paragraphe de description y compris les autres paragraphes */
+p{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    Font-size : 19px
+}
+/* Le prix */
+.price{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 18px;
+    gap: 20px;
+    
+}
+/* Le montant bonus */
+.prix{
+    font-family: 'Fraunces';
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+/* Le montant réel */
+.barre{
+    text-decoration: line-through;
+}
+/* Le bouton d'achat */
+.achat{
+    border-radius: 10px;
+    width: 90%;
+    height: 10%;
+    background: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+/* Le texte du bouton d'achat */
+.achat p{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+/* le pied de page comportant les différents liens  */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+footer .attribution{
+    font-size: 18px;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(223, 91%, 50%);
+}
+ a:hover{
+    color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    transition-duration: .5s;
+}
+@media (max-width:1441px) {
+    .card{
+        height: 75%;
+        width: 20%;
+    }
+    .text{
+        height: 75%;
+        width: 20%;
+    }
+ }
+ @media (max-width:980px) {
+    main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container {
+        height: 38rem;
+        width: 22rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        background: url(./images/image-product-mobile.jpg);
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: center;
+        height: 20rem;
+        width: 21rem;
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .text{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        height: 28rem;
+        width: 19rem;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text h2 {
+        font-size: 29px;
+        padding-bottom: 20px;
+        line-height: 1em;
+      }
+    
+    .price {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: -12px 0px 30px;
+      }
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 2px;
+      }
+      .achat{
+        height: 15%;
+      }
+      footer .attribution{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+ }
+ 
