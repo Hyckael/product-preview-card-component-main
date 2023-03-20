@@ -156,7 +156,7 @@ footer .attribution{
         background-repeat: repeat;
         background-size: auto;
         background-position: center;
-        height: 20rem;
+        height: 18rem;
         width: 21rem;
         display: flex;
         background-repeat: no-repeat;
@@ -167,7 +167,7 @@ footer .attribution{
     .text{
         border-top-right-radius: 0px;
         border-bottom-left-radius: 10px;
-        height: 28rem;
+        height: 25rem;
         width: 19rem;
         padding-top: 20px;
         padding-bottom: 15px;
@@ -192,11 +192,11 @@ footer .attribution{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 2px;
+        padding-top: 4px;
+        padding-bottom: 8px;
       }
       .achat{
-        height: 15%;
+        height: 18%;
       }
       footer .attribution{
         font-size: 15px;
